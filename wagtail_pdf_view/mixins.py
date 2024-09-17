@@ -16,7 +16,7 @@ from django.utils.cache import patch_cache_control
 from django.utils.text import slugify
 
 
-from wagtail.core.models import Page
+from wagtail.models import Page
 
 from .views import AdminViewMixin
 
