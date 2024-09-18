@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wagtail-pdf-view"
+version = "0.3.0-dev0"
+description = "PDF rendering views for the Wagtail CMS"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.6"
+authors = [
+    { name = "Jonas Donhauser" },
+]
+dependencies = [
+    "wagtail",
+]
+
+[project.optional-dependencies]
+django-tex = [
+    "django-tex",
+]
+weasyprint = [
+    "django-weasyprint",
+]
+
+[project.urls]
+Homepage = "https://github.com/donhauser/wagtail-pdf"
+
+[tool.setupttols]
+packages = ["wagtail_pdf_view"]
